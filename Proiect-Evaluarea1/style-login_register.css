@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: #00020bf9;
+    height: 100vh;
+    overflow: hidden;
+}
+.logo{
+    position: absolute;
+    top:1%;
+    left:1%;
+    object-fit:cover;
+    
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    background: white;
+    border-radius: 10px;
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: content-box;
+}
+form .txt_field{
+    position: relative;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 40%;
+    padding: 10px 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #607d8b;
+    height: 12px;
+    font-size: 15px;
+    border: 1px solid #00020bf9;
+    background: none;
+    outline: none;
+    border-radius: 30px;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%) translateX(38%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #00020bf9;
+    transition: .5s;
+}
+.txt_field input:focus ~label,
+.txt_field input:valid ~label{
+    top:-5px;
+    color: #00020bf9;
+}
+.txt_field input:focus ~span::before,
+.txt_field input:valid ~span::before{
+    width:100% ;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 30%;
+    height: 50px;
+    border: 1px solid;
+    background: #00020bf9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor:pointer;
+    outline: none;
+} 
+input[type="submit"]:hover{
+    border-color: #00020bf9;
+    transition: .5s;
+}
+.signup_link{
+    margin: 30px 0;
+    text-align: left;
+    font-size: 16px;
+    color: #666666;
+}
+.signup_link a{
+    color: #00020bf9;
+    text-decoration: none;
+}
+.signup_link a:hover{
+    text-decoration:underline;
+}
+.mascott{
+    position: absolute;
+    top:33%;
+    left:70%;
+    object-fit: cover;
+
+  
+}
