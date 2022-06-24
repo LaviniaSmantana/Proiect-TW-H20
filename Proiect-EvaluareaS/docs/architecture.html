@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Soft Drinks Organizer Architecture Report</title>
+    <link rel="stylesheet" href="../resources/scholarly.css" />
+  </head>
+
+  <body>
+    <article resource="#" typeof="schema:ScholarlyArticle">
+      <header>
+        <h1 property="schema:name">Soft Drinks Organizer Architecture Report</h1>
+      </header>
+      <meta property="schema:accessibilityFeature" content="alternativeText" />
+      <meta property="schema:accessibilityHazard" content="noFlashingHazard" />
+      <meta property="schema:accessMode" content="textual" />
+      <div role="contentinfo">
+        <ol role="directory">
+          <li>
+            <a href="#description">
+              <span> </span>
+              Description
+            </a>
+          </li>
+          <li>
+            <a href="#database">
+              <span> </span>
+              Database
+            </a>
+          </li>
+          <li>
+            <a href="#account">
+              <span> </span>
+              Account
+            </a>
+            <ol role="directory">
+              <li>
+                <a href="#register">
+                  <span> </span>
+                  Register
+                </a>
+              </li>
+              <li>
+                <a href="#login">
+                  <span> </span>
+                  Login
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#statistics">
+              <span> </span>
+              Statistics
+            </a>
+          </li>
+          <li>
+            <a href="#visualisation">
+              <span> </span>
+              Product Visualisation
+            </a>
+          </li>
+          <li>
+            <a href="#export">
+              <span> </span>
+              Data Export
+            </a>
+          </li>
+          <li>
+            <a href="#video">
+              <span> </span>
+              Video
+            </a>
+          </li>
+          <li>
+            <a href="#bibliography">
+              <span> </span>
+              Bibliography
+            </a>
+          </li>
+        </ol>
+        <section typeof="sa:AuthorsList">
+          <h2>Authors</h2>
+          <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Lavinia" />
+                <meta property="schema:familyName" content="Smantana" />
+                <span property="schema:name">Lavinia Smantana</span>
+              </span>
+              <ul>
+                <li
+                  property="schema:roleContactPoint"
+                  typeof="schema:ContactPoint"
+                >
+                  <a
+                    href="mailto:laviniasmantana@gmail.com"
+                    property="schema:email"
+                  >
+                    laviniasmantana@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li typeof="sa:ContributorRole" property="schema:author">
+              <span typeof="schema:Person">
+                <meta property="schema:givenName" content="Andreea" />
+                <meta property="schema:familyName" content="Barzu" />
+                <span property="schema:name">Andreea Barzu</span>
+              </span>
+              <ul>
+                <li
+                  property="schema:roleContactPoint"
+                  typeof="schema:ContactPoint"
+                >
+                  <a
+                    href="mailto:andreeabarzu@gmail.com"
+                    property="schema:email"
+                  >
+                    andreeabarzu@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                  <meta property="schema:givenName" content="Olivia" />
+                  <meta property="schema:additionalName" content="Deborah" />
+                  <meta property="schema:familyName" content="Ursache" />
+                  <span property="schema:name">Olivia Deborah Ursache</span>
+                </span>
+                <ul>
+                  <li
+                    property="schema:roleContactPoint"
+                    typeof="schema:ContactPoint"
+                  >
+                    <a
+                      href="mailto:deborah.ursache7@gmail.com"
+                      property="schema:email"
+                    >
+                      deborah.ursache7@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </section>
+        <section>
+          <h2>License</h2>
+          <a
+            typeof="CreativeWork"
+            property="schema:license"
+            rel="license"
+            href="https://creativecommons.org/licenses/by/4.0/"
+            >CC-BY
+          </a>
+        </section>
+        <h2>References</h2>
+        <ol>
+          <li
+            typeof="schema:WebPage"
+            role="doc-biblioentry"
+            resource="https://world.openfoodfacts.org/category/beverages"
+            property="schema:citation"
+            id="fleet"
+          >
+            <cite property="schema:name">
+              <a href="https://world.openfoodfacts.org/category/beverages"
+                >Open Food Facts Website</a
+              >
+            </cite>
+          </li>
+          
+        </ol>
+      </div>
+      <section id="description">
+        <h3><span>1. </span>Description</h3>
+        <p>
+            We created this web application to help you manage your preferences for non-alcoholic beverage consumption.We also offer support for the management of related data: category, price, ingredients, images, restrictions, validity and others.   Our system will provide support for shopping list activities, plus user administration.
+
+            
+        </p>
+      </section>
+      <section id="database">
+        <h3><span>2. </span>Database</h3>
+        <p>
+          SoDrO uses a mySQL Database that stores the information about the users and the products.
+        </p>
+        <p>
+          The table used for the administration of the users is called:
+          <i>users</i> and contains attributes such as:
+        </p>
+        <ul>
+          <li>
+            id - every user has an unique id
+          </li>
+          <li>
+            username 
+          </li>
+          <li>
+            email - the email that the user registered
+          </li>
+          <li>
+            password - the password that the user registered stored as a hash
+          </li>
+          <li>
+            cpassword - the confirmed password
+          </li>
+          <li>
+            image 
+          </li>
+        </ul>
+        <figure typeof="sa:image">
+          <img src="users.png" alt="database" />
+          <figcaption>
+            How the table looks like and some values for each attribute.
+          </figcaption>
+        </figure>
+        <p>
+          The table used for the administration of the products is called
+          <i>products</i> and it contains attributes such as:
+        </p>
+
+        <ul>
+          <li>
+            id - every product has an unique id
+          </li>
+          <li>name - name of the product</li>
+          <li>
+            code - every product has an unique code
+          </li>
+          <li>
+            price
+          </li>
+          <li>
+            image - every product has a representative image
+          </li>
+          <li>
+            bought - it represent the amount of product that was added to the cart
+          </li>
+        </ul>
+        <figure typeof="sa:image">
+          <img src="products.png" alt="database" />
+          <figcaption>
+            How the table looks like and some values for each attribute.
+          </figcaption>
+        </figure>
+      </section>
+      <section id="account">
+        <h3><span>4. </span>Account</h3>
+        <p></p>
+        <section id="login">
+          <h4><span>4.1. </span>Login</h4>
+          <p>
+            If an user wants to access the website he/she has to login firstly.
+            For that, the user has to provide the username and the password that
+            he/she has chosen when he/she registered. If all these fields are
+            completed, the username is valid and the password is correct,
+             a verification is made in the database to see if there
+            is an user with the username provided and if the password matches. If
+            all these steps are passed, the user will enter the webpage.
+          </p>
+        </section>
+        <section id="register">
+          <h4><span>4.2. </span>Register</h4>
+          <p>
+            If an user doesn't have an account, he/ she has to register. For
+            that, the user has to provide an email adress, an username, a password
+            ,then has to confirm the password and upload an image as a profile picture 
+            optionally.
+            If the email is valid and it isn't been used by another user, also
+             if the confirmPassword field matches with the password and if the image size isn't 
+             too large, the user is created. A message is
+            shown for this and if there is any error, with any of these fields
+            it shows an error which specifies exactly which is the problem. The
+            password is stored crypted in the database. 
+          </p>
+        </section>
+      </section>
+      <section id="statistics">
+        <h3>Statistics</h3>
+        <p>
+          SoDro offers a couple of statistics providing the amount of sugar in some of the product and
+          the quality of the beverages.
+        </p>
+        <figure typeof="sa:image">
+          <img src="barchart.png" alt="county_stats"  height="500px " />
+          <figcaption>Statistics with amount of sugar per drink.</figcaption>
+        </figure>
+        <figure typeof="sa:image">
+          <img src="percentage.png" alt="county_stats" width="70%"/>
+          <figcaption>Percentage showing quality of the drinks.</figcaption>
+        </figure>
+      </section>
+      <section id="visualisation">
+        <h3>Product Visualisation</h3>
+        <p>
+          Our website provides the user a way to visualize several drinks from six different categories and 
+          to add his/her favourite drinks to the cart. 
+
+        </p>
+        <figure typeof="sa:image">
+          <img src="architecture.jpeg" alt="county_stats"  height="400px " />
+          <figcaption>Architecture of the website.</figcaption>
+        </figure>
+        <figure typeof="sa:image">
+          <img src="flow.jpeg" alt="county_stats" height="700px"/>
+          <figcaption>The flow of the website.</figcaption>
+        </figure>
+        
+      </section>
+      <section id="export">
+        <h3>Data Export</h3>
+        <p>
+          Every way of data visualisation also has the option to export the data
+          in different formats:
+        </p>
+
+        <ul>
+          <li>
+            CSV - the data is written, containing the attributes selected in
+            that specific view and their values
+          </li>
+          <li>SVG - it saves the whole chart as a 2D image using XML</li>
+
+        </ul>
+        <figure typeof="sa:image">
+          <img src="csv.png" alt="county_stats" height="400px"/>
+          <figcaption>CSV Export.</figcaption>
+        </figure>
+      </section>
+      <section id="video">
+        <h3>Video Presentation</h3>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=ktanZOKvlrY">
+                https://www.youtube.com/watch?v=ktanZOKvlrY</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="bibliography">
+        <h3>Bibliography</h3>
+        <ul>
+          <li>
+            <a
+              href="https://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an"
+            >
+              https://stackoverflow.com/questions/23218174/how-do-i-save-export-an-svg-file-after-creating-an-svg-with-d3-js-ie-safari-an</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/akulmehta/SaveSVG">
+              https://github.com/akulmehta/SaveSVG
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://tympanus.net/codrops/2012/03/27/login-and-registration-form-with-html5-and-css3/"
+            >
+              https://tympanus.net/codrops/2012/03/27/login-and-registration-form-with-html5-and-css3/
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tutorialspoint.com/d3js/d3js_drawing_charts.htm"
+            >
+              https://www.tutorialspoint.com/d3js/d3js_drawing_charts.htm
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://adnan-tech.com/how-to-create-and-read-rss-feed-for-your-website-php/"
+            >
+            http://adnan-tech.com/how-to-create-and-read-rss-feed-for-your-website-php/
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://css-tricks.com/how-to-make-charts-with-svg/"
+            >
+            https://css-tricks.com/how-to-make-charts-with-svg/
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/css/css3_buttons.asp"
+            >
+            https://www.w3schools.com/css/css3_buttons.asp
+
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tutorialspoint.com/mysql/mysql-create-database.htm"
+            >
+            https://www.tutorialspoint.com/mysql/mysql-create-database.htm
+
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/cssref/sel_hover.asp"
+            >
+            https://www.w3schools.com/cssref/sel_hover.asp
+
+            </a>
+          </li>
+      
+       
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Soft Drinks Organizer Progress Report</title>
+    <link rel="stylesheet" href="../resources/scholarly.css">
+</head>
+
+<body>
+    <article resource="#" typeof="schema:ScholarlyArticle">
+        <header>
+            <h1 property="schema:name">Soft Drinks Organizer Progress</h1>
+        </header>
+        <meta property="schema:accessibilityFeature" content="alternativeText">
+        <meta property="schema:accessibilityHazard" content="noFlashingHazard">
+        <meta property="schema:accessMode" content="textual">
+        <div role="contentinfo">
+            <ol role="directory">
+                <li>
+                    <a href="#webdesign">
+                        <span> </span>
+                        Web design
+                    </a>
+                </li>
+                <li>
+                    <a href="#downloadbuttons">
+                        <span> </span>
+                        Download buttons- SVG, CSV
+                    </a>
+                </li>
+                <li>
+                    <a href="#rss">
+                        <span> </span>
+                         RSS Data Flow
+                    </a>
+                </li>
+                <li>
+                    <a href="#coderestructuring">
+                        <span> </span>
+                        Code Restructuring & Hardcoding Removal
+                    </a>
+                </li>
+                <li>
+                    <a href="#responsiveness">
+                        <span> </span>
+                        Responsiveness
+                    </a>
+                </li>
+                <li>
+                    <a href="#validate">
+                        <span> </span>
+                        Validate CSS & HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="#github">
+                        <span> </span>
+                         Code Administration
+                    </a>
+                </li>
+            </ol>
+            <section typeof="sa:AuthorsList">
+                <h2>Authors</h2>
+                <ul>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Lavinia" />
+                            <meta property="schema:familyName" content="Smantana" />
+                            <span property="schema:name">Lavinia Smantana</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:laviniasmantana@gmail.com" property="schema:email">
+                                    laviniasmantana@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Andreea" />
+                            <meta property="schema:familyName" content="Barzu" />
+                            <span property="schema:name">Andreea Barzu</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:andreeabarzu@gmail.com" property="schema:email">
+                                    andreeabarzu@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Olivia" />
+                            <meta property="schema:additionalName" content="Deborah" />
+                            <meta property="schema:familyName" content="Ursache" />
+                            <span property="schema:name">Olivia Deborah Ursache</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:deborah.ursache7@gmail.com" property="schema:email">
+                                    deborah.ursache7@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>License</h2>
+                <a typeof="CreativeWork" property="schema:license" rel="license"
+                    href="https://creativecommons.org/licenses/by/4.0/">CC-BY
+                </a>
+            </section>
+            <h2>References</h2>
+            <ol>
+                <li typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://world.openfoodfacts.org/category/beverages" property="schema:citation" id="fleet">
+                    <cite property="schema:name">
+                        <a href="https://world.openfoodfacts.org/category/beverages">Open Food Facts Website</a>
+                    </cite>
+                </li>
+            </ol>
+            </section>
+        </div>
+        <section id="webdesign">
+            <h3><span> </span>Web design</h3>
+            <p> We started the project by creating the main elements such as navigation bar, the home page, the login and register pages,
+                and a design for the products page. From that, we created the cart, the single product pages and the statistics page.
+            </p>
+        </section>
+        <section id="database">
+            <h3><span> </span>User Database</h3>
+            <p> We continued by creating the users database and then proceeded to implement the login and register part.
+                At this step we added login and register pages, such that if somebody wants to enter the webpage he/ she 
+            needs to create an account firstly.
+            </p>
+        </section>
+        <section id="database2">
+            <h3><span> </span>Product Database</h3>
+            <p> We continued by creating the products database and then proceeded to implement the shopping cart.
+            </p>
+        </section>
+        <section id="downloadbuttons">
+            <h3><span> </span>Download buttons</h3>
+            <p>
+                At this step we implemented the download buttons for exporting data in two formats: CSV, SVG.
+            </p>
+        </section>
+        <section id="rss">
+            <h3><span> </span>RSS Data Flow</h3>
+            <p>
+                By using the products database and selecting those in descending order from the most bought items, we created a ranking
+                that is available as RSS data flow.
+            </p>
+            
+        </section>
+        <section id="coderestructuring">
+            <h3><span> </span>Code Restructuring & Hardcoding Removal</h3>
+            <p>
+                For every page of product we used to have a different .css file, so we created just one for 
+                every type of product. Moreover, instead of the .html files, we transitioned to .php files.
+            </p>
+        </section>
+        <section id="responsiveness">
+            <h3><span> </span>Responsiveness</h3>
+            <p>We have modified the width and the height values so that the page can also be properly seen on a tablet or smartphone.
+            </p>
+        </section>
+        <section id="validate">
+            <h3><span> </span>Validate CSS & HTML</h3>
+            <p>At this step we eliminated some warnings that we had with the CSS file and HTML pages.
+            </p>
+        </section>
+        <section id="github">
+            <h3><span> </span>Code Administration</h3>
+            <p>
+                For keeping the code updated and managing it we used Trello and Messenger. Every time one of us had some useful update for the project as
+                a whole and was sure it was ready, we would post it on Trello. As a matter of fact, each of the chapters above represents, 
+                more or less, a commit one of us did. 
+            </p>
+            <p>    
+                Moreover, besides these specific commits, we also had code refactorization commits, 
+                that consist in making the code more readable.  
+            </p>
+            <p>
+                Another important aspect of Trello Administration was updating the code. After one's commit, the other one of us had the responsibility
+                to keep up with the latest changes by pulling them. 
+            </p>
+        </section> 
+    </article>
+</body>
+</html>
